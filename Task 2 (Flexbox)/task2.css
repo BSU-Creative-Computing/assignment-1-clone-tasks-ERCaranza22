@@ -1,0 +1,321 @@
+/* fixing the body */
+body {
+  margin: 0 ;
+  background-color: rgb(232, 231, 231);
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* navigation bar */
+.nav-container {
+  background-color: #1e90ff;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+}
+
+/* right nav and the search nav */
+.right-nav {
+  text-align: center;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* search-bar edit */
+.search-bar {
+  text-align: center;
+  margin: auto 0;
+  border-radius: 20px solid black;
+  margin-top: 30px;
+  margin-left: 160px;
+}
+
+/* search-bar input */
+.search-bar input {
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  margin: 0 10px;
+  /* display: inline-flex; */
+}
+
+/* the list to lineup */
+/* .right-nav li {
+  display: inline-flex;
+} */
+
+.menu {
+  display: none;
+}
+
+/* h1 class title */
+.title {
+  padding-left: 25px;
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+/* navbar link */
+.right-nav a {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  font-weight: normal;
+}
+
+input{
+  padding-top: 0px;
+}
+/* navbar link hover */
+.right-nav li a:hover, .search-bar li a:hover {
+  color: black;
+}
+
+/* container */
+.container {
+  display: flex;
+  font-size: 14px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+/* container img */
+.container img {
+  width: 100%;
+}
+
+/* main movie class */
+.mainmovie {
+  flex: 3;
+  background-color: #ffffff;
+  margin-top: 30px;
+  height: 920px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mainmovie h2, .mainmovie p {
+  padding-left: 30px;
+}
+
+.big_button {
+  margin-left: 300px;
+  margin-right: 25px;
+}
+
+button {
+  background-color: #1e90ff;
+  border: 0px;
+  padding: 8px;
+  margin-top: 25px;
+  margin-right: 10px;
+  border-radius: 3px;
+  color: white;
+  float: right;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* h2 and p edit */
+h2 {
+  text-align: left;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+/* siderbar movies h2 text */
+p {
+  font-size: 14px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* siderbar movies */
+.movie-sidebar {
+  flex: 2;
+  display: flex;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.row1, .row2 {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+}
+.row2{
+  margin-top: -5px;
+}
+
+/* image sidebar */
+.lone_gunmen {
+  flex: 1;  
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 10px;
+  padding: 10px;
+  height: 45%;
+}
+
+/* image sidebar */
+.predators {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+  height: 45%;
+
+}
+
+/* image sidebar */
+.millenium {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 10px;
+  padding: 10px;
+  margin-top: 5px;
+  height: 45%;
+
+}
+
+/* image sidebar */
+.rage {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 10px;
+  padding: 10px;
+  margin-top: 6px;
+  height: 45%;
+
+}
+
+/* footer display */
+footer {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-left: 0%;
+}
+
+@media (width <= 1280px) {
+  .container{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media (width <= 1024px) {
+  .movie-sidebar {
+    flex: 2;
+    display: flex;
+    padding: 20px;
+    margin-top: 10px;
+    flex:1;
+    flex-direction: column;
+  }
+
+  .row1, .row2 {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+  }
+  .row2{
+    margin-top: 5px;
+    grid-gap: 5px;
+  }
+}
+
+@media (width <= 800px) {
+  .right-nav, .search-bar{
+    display: none;
+  }
+  .menu {
+    display: inline;
+    margin-top: 33px;
+    margin-right: 20px;
+  }
+  .container{
+    flex-direction: column;
+  }
+
+  .mainmovie {
+    flex: 3;
+    background-color: #ffffff;
+    margin-top: 30px;
+    height: 920px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .movie-sidebar {
+    flex: 2;
+    display: flex;
+    padding: 20px;
+    margin-top: 10px;
+    flex:1;
+    flex-direction: row;
+    margin-left: -20px;
+    margin-right: -30px;
+  }
+
+  .row1, .row2 {
+    display: flex;
+    flex:2;
+    flex-direction: column;
+  }
+  .row2{
+    margin-top: -5px;
+  }
+    
+}
+
+@media (width <= 480px) {
+  .right-nav, .search-bar{
+    display: none;
+  }
+  .menu {
+    display: inline;
+    margin-top: 33px;
+    margin-right: 20px;
+  }
+  .container{
+    flex-direction: column;
+  }
+
+  .mainmovie {
+    flex: 3;
+    background-color: #ffffff;
+    margin-top: 30px;
+    height: 920px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: -15px;
+  }
+
+  .movie-sidebar {
+    display: block;
+  }
+
+  .row1, .row2 {
+    display: block;
+    flex:2;
+    flex-direction: column;
+  }
+  .row2{
+    margin-top: 5px;
+  }
+  /* .m{
+    margin-left: -20px;
+    margin-right: -20px;
+  } */
+}
